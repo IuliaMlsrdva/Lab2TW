@@ -1,0 +1,71 @@
+﻿@using System.Web.Optimization;
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="desc ription" content="">
+    <meta name="author" content="">
+
+
+    <title>Good Movies</title>
+
+    <!-- Bootstrap core CSS -->
+
+
+    @Styles.Render("~/bundles/bootstrap/css")
+
+    <!-- Additional CSS Files -->
+
+    @Styles.Render("~/bundles/fontawesome/css")
+    @Styles.Render("~/bundles/owl/css")
+    @Styles.Render("~/bundles/templatemo-style/css")
+
+</head>
+
+<body class="is-preload">
+    <!— Wrapper —>
+    <div id="wrapper">
+        <div id="main">
+            <div class="inner">
+                <header id="header">
+                    @Html.Partial("_Header")
+                </header>
+                @RenderBody()
+            </div>
+        </div>
+        <div id="sidebar">
+
+            <div class="inner">
+                <section id="search" class="alt">
+                    @Html.Partial("_SearchSec")
+                </section>
+                <nav id="menu">
+                    @Html.Partial("_Nav")
+                </nav>
+                <div class="featured-posts">
+                    @Html.Partial("_Feature")
+                </div>
+
+                <footer id="footer">
+                    @Html.Partial("_Footer")
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery.min/js")
+    @Scripts.Render("~/bundles/bootstrapbundle/js")
+
+    @Scripts.Render("~/bundles/browser/js")
+    @Scripts.Render("~/bundles/breakpoint/js")
+    @Scripts.Render("~/bundles/transition/js")
+    @Scripts.Render("~/bundles/owl-carousel/js")
+    @Scripts.Render("~/bundles/custom/js")
+
+
+</body>
+</html>

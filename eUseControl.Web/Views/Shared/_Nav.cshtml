@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "_Nav";
+}
+
+<ul>
+    <li><a href="@Url.Action("Index","Home")">Homepage</a></li>
+    <li><a href="@Url.Action("SecondPage","SecondPage")">FAQ</a></li>
+    <li><a href="@Url.Action("SignUp","SignUp")">Sign Up</a></li>
+    <li>
+        <span class="opener">Movies</span>
+        <ul>
+            <li><a href="#">Drama</a></li>
+            <li><a href="#">Comedy</a></li>
+            <li><a href="#">Thrillers</a></li>
+        </ul>
+    </li>
+    <li>
+        <span class="opener">Serials</span>
+        <ul>
+            <li><a href="#">Comedy</a></li>
+            <li><a href="#">Detectives</a></li>
+            <li><a href="#">Fantasy</a></li>
+        </ul>
+    </li>
+    <li><a href="https://www.google.com">Google it</a></li>
+</ul>
+
