@@ -18,6 +18,16 @@ namespace eUseControl.Web
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+            routes.MapRoute(
+                name: "SecondPage",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "SecondPage", action = "SecondPage", id = UrlParameter.Optional }
+            );
+            routes.MapRoute(
+                name: "SignUp",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "SignUp", action = "SignUp", id = UrlParameter.Optional }
+            );
         }
     }
 }

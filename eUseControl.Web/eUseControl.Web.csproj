@@ -265,6 +265,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\ULoginData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -304,7 +305,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+    <Folder Include="NewFolder1\" />
     <Folder Include="Vendors\" />
   </ItemGroup>
   <ItemGroup>
@@ -312,6 +313,20 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eUseControl.BusinessLogic\eUseControl.BusinessLogic.csproj">
+      <Project>{88eda38d-81ff-497f-af88-7e5004d1d277}</Project>
+      <Name>eUseControl.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eUseControl.Helper\eUseControl.Helper.csproj">
+      <Project>{259fd6c7-b8f3-4d7d-9a75-53e5893a7e06}</Project>
+      <Name>eUseControl.Helper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eUseControl.Models\eUseControl.Models.csproj">
+      <Project>{D288A927-14B6-4F7D-9DD0-8C129E76D0AE}</Project>
+      <Name>eUseControl.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
