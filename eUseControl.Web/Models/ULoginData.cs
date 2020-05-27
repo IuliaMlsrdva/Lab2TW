@@ -7,8 +7,11 @@ namespace eUseControl.Web.Models
 {
     public class ULoginData
     {
-        public string UserName { get; set; }
-        public string UserPassword { get; set; }
+        
+        public string Username { get; internal set; }
+        public string Password { get; set; }
+        public string Credential { get; set; }
+        public string LoginIp { get; set; }
         public DateTime SessionDate { get; internal set; }
     }
 }

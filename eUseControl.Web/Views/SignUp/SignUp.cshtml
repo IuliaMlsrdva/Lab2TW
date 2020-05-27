@@ -1,17 +1,41 @@
 ﻿
 @{
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_SignUp.cshtml";
     ViewBag.Title = "SignUp";
 }
-@model eUseControl.Web.Models.ULoginData
 
-<section class="forms">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-heading">
-                    <h2>Registration</h2>
-                </div>
+
+@model eUseControl.Web.Models.ULogin
+
+
+
+    <section class="forms">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h2>Registration</h2>
+                    </div>
+                    @Html.ValidationSummary(true)
+                    @using (Html.BeginForm("SignUp", "SignUp", FormMethod.Post, new { @id = "LoginForm" }))
+                    {
+                        @Html.AntiForgeryToken()
+
+
+                        @Html.TextBoxFor(u => u.Credential, new
+                    {
+                        placeholder = "Username",
+                        name = "username",
+                        value = ""
+                    })
+
+                        @Html.TextBoxFor(u => u.Password, new
+                            {
+                                type = "password",
+                                   placeholder = "Password",
+                                  name = "password",
+                                  value = ""
+                                        })
                 <form id="contact" action="" method="post">
                     <div class="row">
                         <div class="col-md-6">
@@ -50,14 +74,25 @@
                         </div>
 
                         <div class="col-md-12">
+
                             <button type="submit" id="form-submit" class="button">Sign Up</button>
+                            <a class="btn btn-default " href="@Url.Action("Index", "Home")">Register</a>
+
                         </div>
                     </div>
                 </form>
+                        <button>Login</button>
+
+                    }
+
+
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+
+
 
 
 

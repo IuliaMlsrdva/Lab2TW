@@ -28,6 +28,11 @@ namespace eUseControl.Web
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "SignUp", action = "SignUp", id = UrlParameter.Optional }
             );
+            routes.MapRoute(
+                name: "Subscription",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "Subscription", action = "Subscription", id = UrlParameter.Optional }
+            );
         }
     }
 }
