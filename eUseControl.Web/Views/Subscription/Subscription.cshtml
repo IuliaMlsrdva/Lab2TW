@@ -1,64 +1,35 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Subscription";
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>Subscription</title>
-</head>
+
+
 <body>
     <section class="services">
-        <h2>Top Films </h2>
+        <h2>Add films </h2>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="service-item first-item">
-                        <div class="icon"></div>
-                        <h4>Bridge to Terab</h4>
-                        <p>Drama</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-item second-item">
-                        <div class="icon"></div>
-                        <h4>The Heat</h4>
-                        <p>Thriller/Comedy</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-item third-item">
-                        <div class="icon"></div>
-                        <h4>Blue Jay</h4>
-                        <p>Drama</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-item fourth-item">
-                        <div class="icon"></div>
-                        <h4>Jumanji</h4>
-                        <p>Fantasy</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-item fivth-item">
-                        <div class="icon"></div>
-                        <h4>Spies in Disg</h4>
-                        <p>Sci-fi</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-item sixth-item">
-                        <div class="icon"></div>
-                        <h4>Togo</h4>
-                        <p>Drama</p>
-                    </div>
-                </div>
+               <table>
+                  
+                @using (Html.BeginForm("Product", "Subscription", FormMethod.Post, new { autocomplete  = "off" }))
+                {
+                    foreach(var prod in Model.Products)
+                    {
+                        <tr>
+                            <td>@prod</td>
+                            <td>
+                                <button style="float:right" class=" btn btn-lg btn-primary" name=" btn"
+                                        type="button" value="@prod">ADD
+                                </button>
+                            </td>
+                        </tr>
+                    }
+
+                }
+                </table>
             </div>
         </div>
     </section>
 </body>
-</html>
+

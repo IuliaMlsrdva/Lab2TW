@@ -13,5 +13,11 @@ namespace eUseControl.Web.Models
         public string Credential { get; set; }
         public string LoginIp { get; set; }
         public DateTime SessionDate { get; internal set; }
+
+
+
+        public List<string> Products { get; set; }
+        public string SingleProduct { get; set; }
+        
     }
 }

@@ -308,6 +308,7 @@
     <Content Include="Views\Subscription\Subscription.cshtml" />
     <Content Include="Views\Shared\_Subscription.cshtml" />
     <Content Include="Views\Shared\_Layout_Blank.cshtml" />
+    <Content Include="Views\Subscription\Product.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
