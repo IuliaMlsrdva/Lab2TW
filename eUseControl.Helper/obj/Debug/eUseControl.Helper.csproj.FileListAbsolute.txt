@@ -1,0 +1,17 @@
+C:\Users\IRINA\Desktop\eUseControl-3\eUseControl.Helper\bin\Debug\eUseControl.Helper.dll
+C:\Users\IRINA\Desktop\eUseControl-3\eUseControl.Helper\bin\Debug\eUseControl.Helper.pdb
+C:\Users\IRINA\Desktop\eUseControl-3\eUseControl.Helper\obj\Debug\eUseControl.Helper.csprojAssemblyReference.cache
+C:\Users\IRINA\Desktop\eUseControl-3\eUseControl.Helper\obj\Debug\eUseControl.Helper.csproj.CoreCompileInputs.cache
+C:\Users\IRINA\Desktop\eUseControl-3\eUseControl.Helper\obj\Debug\eUseControl.Helper.dll
+C:\Users\IRINA\Desktop\eUseControl-3\eUseControl.Helper\obj\Debug\eUseControl.Helper.pdb
+C:\Users\IRINA\Desktop\eUseControl-3\eUseControl.Helper\bin\Debug\eUseControl.Helper.dll.config
+C:\Users\IRINA\Desktop\eUseControl-3\eUseControl.Helper\bin\Debug\EntityFramework.dll
+C:\Users\IRINA\Desktop\eUseControl-3\eUseControl.Helper\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\IRINA\Desktop\eUseControl-3\eUseControl.Helper\bin\Debug\EntityFramework.xml
+C:\Users\IRINA\Desktop\eUseControl-3\eUseControl.Helper\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\IRINA\Desktop\eUseControl-3\eUseControl.Helper\obj\Debug\eUseControl.Helper.csproj.CopyComplete
+C:\Users\IRINA\Desktop\eUseControl-3\eUseControl.Helper\bin\Debug\AutoMapper.dll
+C:\Users\IRINA\Desktop\eUseControl-3\eUseControl.Helper\bin\Debug\System.ValueTuple.dll
+C:\Users\IRINA\Desktop\eUseControl-3\eUseControl.Helper\bin\Debug\AutoMapper.pdb
+C:\Users\IRINA\Desktop\eUseControl-3\eUseControl.Helper\bin\Debug\AutoMapper.xml
+C:\Users\IRINA\Desktop\eUseControl-3\eUseControl.Helper\bin\Debug\System.ValueTuple.xml
